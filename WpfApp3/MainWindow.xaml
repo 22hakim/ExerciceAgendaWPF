@@ -16,5 +16,10 @@
                 </MenuItem>
             </Menu>
         </DockPanel>
+        <StackPanel>
+            <Frame Name="MainFrame" 
+                   NavigationUIVisibility="Hidden">
+            </Frame>
+        </StackPanel>
     </Grid>
 </Window>
