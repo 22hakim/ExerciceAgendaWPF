@@ -8,6 +8,13 @@
         Title="Agenda LaManu" Height="450" Width="800"
         >
     <Grid>
-
+        <DockPanel>
+            <Menu>
+                <MenuItem Header="Clients">
+                    <MenuItem Header="_Ajouter un client"></MenuItem>
+                    <MenuItem Header="_Liste des clients"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
     </Grid>
 </Window>
