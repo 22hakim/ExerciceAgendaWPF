@@ -11,7 +11,9 @@
         <DockPanel>
             <Menu>
                 <MenuItem Header="Clients">
-                    <MenuItem Header="_Ajouter un client"></MenuItem>
+                    <Hyperlink Name="AddClient" Click="AddClient_Click">
+                        Ajouter un client
+                    </Hyperlink>
                     <MenuItem Header="_Liste des clients"></MenuItem>
                 </MenuItem>
             </Menu>

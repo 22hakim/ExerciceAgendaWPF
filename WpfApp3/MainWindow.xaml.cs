@@ -24,5 +24,10 @@ namespace WpfApp3
         {
             InitializeComponent();
         }
+
+        private void AddClient_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new System.Uri("addCustomer.xaml", UriKind.Relative));
+        }
     }
 }
