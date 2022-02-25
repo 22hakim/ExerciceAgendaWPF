@@ -24,5 +24,12 @@ namespace WpfApp3
         {
             InitializeComponent();
         }
+
+        private void Add_Customer(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
     }
 }
