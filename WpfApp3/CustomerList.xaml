@@ -16,7 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <DataGrid Name="customerDataGrid" AutoGenerateColumns="False" 
+        <DataGrid Name="customerDataGrid" DataGridCell.Selected="displayCustomer" AutoGenerateColumns="False" 
                   Grid.Column="0">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Nom" Binding="{Binding Lastname}" />
