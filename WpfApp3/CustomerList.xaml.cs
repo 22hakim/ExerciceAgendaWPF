@@ -60,12 +60,24 @@ namespace WpfApp3
             _db.SaveChanges();
 
             this.NavigationService.Refresh();
+            refreshCustomerList();
 
         }
 
         private void deleteCustomer(object sender, System.Windows.RoutedEventArgs e)
         {
+            Customer customer = _db.Customers.Find(Convert.ToInt32(id.Content));
+            _db.Customers.Remove(customer);
+            _db.SaveChanges();
+            refreshCustomerList();
 
+        }
+
+        private void refreshCustomerList()
+        {
+            List<Customer> customerList = _db.Customers.ToList();
+            customerDataGrid.ItemsSource = customerList;
+            customerDataGrid.Items.Refresh();
         }
         public string CheckString(string value, string name)
         {
