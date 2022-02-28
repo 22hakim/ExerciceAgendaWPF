@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\App.xaml
-2-1700934832
+3-1628707916
 
-131297556176
+14-2146511691
 214-1949225735
-addCustomer.xaml;MainWindow.xaml;
+addCustomer.xaml;CustomerList.xaml;MainWindow.xaml;
 
 False
 

@@ -53,3 +53,5 @@ C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\ref\WpfApp3.dll
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\addCustomer.g.cs
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\addCustomer.baml
+C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\CustomerList.g.cs
+C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\CustomerList.baml

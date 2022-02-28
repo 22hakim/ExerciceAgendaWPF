@@ -14,7 +14,9 @@
                     <Hyperlink Name="AddClient" Click="AddClient_Click">
                         Ajouter un client
                     </Hyperlink>
-                    <MenuItem Header="_Liste des clients"></MenuItem>
+                    <Hyperlink Name="ListClient"  Click="ListClient_Click">
+                        Liste des clients
+                    </Hyperlink>
                 </MenuItem>
             </Menu>
         </DockPanel>
