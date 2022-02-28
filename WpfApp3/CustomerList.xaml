@@ -27,6 +27,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Column="1">
+            <StackPanel x:Name="errorForm"></StackPanel>
             <Label Name="id" Visibility="Hidden"></Label>
             <Label FontSize="20">Client :</Label>
             <Label>Nom</Label>
