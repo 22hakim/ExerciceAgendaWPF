@@ -22,5 +22,15 @@ namespace WpfApp3
             List<Customer> customerList = _db.Customers.ToList();
             customerDataGrid.ItemsSource = customerList;
         }
+
+        private void updateCustomer(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
+
+        private void deleteCustomer(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }
