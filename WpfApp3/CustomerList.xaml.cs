@@ -21,12 +21,10 @@ namespace WpfApp3
         private readonly agendaContext _db;
         public CustomerList()
         {
-
             _db = new agendaContext();
             InitializeComponent();
             this.DataContext = new Customer();
-            List<Customer> customerList = _db.Customers.ToList();
-            customerDataGrid.ItemsSource = customerList;
+            refreshCustomerList();
         }
 
         private void displayCustomer(object sender, RoutedEventArgs e)

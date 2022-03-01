@@ -93,6 +93,7 @@ namespace WpfApp3
             TextBlock textBlock = new TextBlock();
             textBlock.Text = "Le champs " + value + " n'est pas valide";
             textBlock.Foreground = new SolidColorBrush(Colors.Red);
+            textBlock.TextWrapping = TextWrapping.Wrap;
             errorForm.Children.Add(textBlock);
         }
 
