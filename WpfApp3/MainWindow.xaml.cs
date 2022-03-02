@@ -42,7 +42,7 @@ namespace WpfApp3
 
         private void ListBroker_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new System.Uri("BrokerList.xaml", UriKind.Relative));
+            MainFrame.Navigate(new System.Uri("ListBroker.xaml", UriKind.Relative));
         }
     }
 }

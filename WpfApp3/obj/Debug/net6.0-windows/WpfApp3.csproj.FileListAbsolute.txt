@@ -57,3 +57,5 @@ C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\CustomerList.baml
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\AddBroker.g.cs
 C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\AddBroker.baml
+C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\ListBroker.g.cs
+C:\Users\IntervenantV\source\repos\OPP_LA_MANU\WpfApp3\WpfApp3\obj\Debug\net6.0-windows\ListBroker.baml

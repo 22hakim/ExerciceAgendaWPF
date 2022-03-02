@@ -1,0 +1,48 @@
+﻿<Page x:Class="WpfApp3.ListBroker"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ListBroker">
+
+    <Grid>
+        <Grid Background="#e9ecef">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <DataGrid Name="brokerDataGrid" DataGridCell.Selected="displayBroker" AutoGenerateColumns="False" 
+                  Grid.Column="0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nom" Binding="{Binding Lastname}" />
+                    <DataGridTextColumn Header="Prénom" Binding="{Binding Firstname}" />
+                    <DataGridTextColumn Header="E-mail" Binding="{Binding Mail }"/>
+                    <DataGridTextColumn Header="Numéro de téléphone" Binding="{Binding PhoneNumber}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <StackPanel Grid.Column="1">
+                <StackPanel x:Name="errorForm"></StackPanel>
+                <Label Name="id" Visibility="Hidden"></Label>
+                <Label FontSize="20">Courtier :</Label>
+                <Label>Nom</Label>
+                <TextBox Name="lastnameInput"></TextBox>
+                <Label>Prénom</Label>
+                <TextBox Name="firstnameInput"></TextBox>
+                <Label>E-mail</Label>
+                <TextBox Name="mailInput"></TextBox>
+                <Label>Numéro de téléphone</Label>
+                <TextBox Name="phoneInput"></TextBox>
+                <Label>Budget</Label>
+                <Button Click="updateBroker" Margin="10" HorizontalAlignment="Center">Modifiez</Button>
+                <Button Click="deleteBroker" HorizontalAlignment="Center">Supprimez</Button>
+                <Label FontSize="15" Foreground="Red"  Name="erreurLabel"></Label>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
