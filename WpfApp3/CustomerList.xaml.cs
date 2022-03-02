@@ -23,7 +23,6 @@ namespace WpfApp3
         {
             _db = new agendaContext();
             InitializeComponent();
-            this.DataContext = new Customer();
             refreshCustomerList();
         }
 

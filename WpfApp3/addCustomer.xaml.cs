@@ -17,23 +17,23 @@ namespace WpfApp3
     {
         public List<bool> errorList = new List<bool>();
         private readonly agendaContext _db;
+        Customer customer = new Customer();
         public addCustomer()
         {
             _db = new agendaContext();
             InitializeComponent();
+            this.DataContext = customer;
         }
 
         private void Add_Customer(object sender, RoutedEventArgs e)
         {
             errorForm.Children.Clear();
-            Customer customer = new Customer();
 
-            customer.Firstname = CheckString(firstname.Text, "prénom");
-            customer.Lastname = CheckString(lastname.Text, "nom");
-            customer.Budget = CheckBudget(budget.Text, "budget");
-            customer.PhoneNumber = CheckTelephoneNumber(phonenumber.Text, "numéro de telephone");
-            customer.Mail = mail.Text;
-            //CheckMail(phonenumber.Text, "numéro de telephone");
+            CheckString(customer.Firstname, "prénom");
+            CheckString(customer.Lastname, "nom");
+            CheckInt(customer.Budget, "budget");
+            CheckTelephoneNumber(customer.PhoneNumber, "numéro de telephone");
+
 
             if(errorList.Contains(false))
             {
@@ -48,10 +48,9 @@ namespace WpfApp3
 
         }
 
-        public string CheckString(string value, string name)
+        public string? CheckString(string value, string name)
         {
-            //Regex regex = new Regex(@"^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$");
-            //Match match = regex.Match(value.ToString());
+
             if (value == null || value == String.Empty)
             {
                 addTextBox(name);
@@ -62,32 +61,37 @@ namespace WpfApp3
 
         }
 
+
+        public int CheckInt(int? value, string name)
+        {
+            if (value == null)
+            {
+                addTextBox(name);
+                errorList.Add(false);
+            }
+
+            return value ?? 0;
+        }
+
         public string CheckTelephoneNumber(string value, string name)
         {
             Regex regex = new Regex(@"^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$");
+            if (value == null || value == String.Empty)
+            {
+                addTextBox(name);
+                errorList.Add(false);
+                return value;
+            }
+
+
             Match match = regex.Match(value.ToString());
-            if (value == String.Empty || match == Match.Empty)
+            if(match == Match.Empty)
             {
                 addTextBox(name);
                 errorList.Add(false);
             }
             return value;
         }
-
-        public int CheckBudget(object value, string name)
-        {
-            int myInt;
-            if (int.TryParse((string?)value, out myInt))
-            {
-                return myInt;
-            }
-            else { 
-                addTextBox(name);
-                errorList.Add(false);
-                return 0;
-            }
-        }
-
         private void addTextBox(string value)
         {
             TextBlock textBlock = new TextBlock();

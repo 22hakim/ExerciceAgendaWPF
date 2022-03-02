@@ -16,15 +16,15 @@
             <StackPanel Width="160" Margin="10,50,10,10">
                 <StackPanel x:Name="errorForm"></StackPanel>
                 <Label Foreground="Black" Target="{Binding ElementName=firstname}">FirstName</Label>
-                <TextBox x:Name="firstname"></TextBox>
+                <TextBox x:Name="firstname" Text="{Binding Firstname, Mode=TwoWay}"></TextBox>
                 <Label Foreground="Black" Target="{Binding ElementName=lastname}">LastName</Label>
-                <TextBox x:Name="lastname"></TextBox>
+                <TextBox x:Name="lastname" Text="{Binding Lastname, Mode=TwoWay}"></TextBox>
                 <Label Foreground="Black" Target="{Binding ElementName=mail}">Mail</Label>
-                <TextBox x:Name="mail"></TextBox>
+                <TextBox x:Name="mail" Text="{Binding Mail, Mode=TwoWay}"></TextBox>
                 <Label Foreground="Black" Target="{Binding ElementName=phonenumber}">Phone Number</Label>
-                <TextBox x:Name="phonenumber"></TextBox>
+                <TextBox x:Name="phonenumber" Text="{Binding PhoneNumber, Mode=TwoWay}"></TextBox>
                 <Label Foreground="Black" Target="{Binding ElementName=budget}">Budget</Label>
-                <TextBox x:Name="budget"></TextBox>
+                <TextBox x:Name="budget" Text="{Binding Budget, Mode=TwoWay, ValidatesOnExceptions=True}"></TextBox>
                 <Button Click="Add_Customer" Content="Ajouter un client" Margin="0,10,0,0"></Button>
         </StackPanel>
         </Border>
