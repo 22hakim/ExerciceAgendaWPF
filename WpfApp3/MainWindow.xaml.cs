@@ -34,5 +34,15 @@ namespace WpfApp3
         {
             MainFrame.Navigate(new System.Uri("CustomerList.xaml", UriKind.Relative));
         }
+
+        private void AddBroker_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new System.Uri("addBroker.xaml", UriKind.Relative));
+        }
+
+        private void ListBroker_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new System.Uri("BrokerList.xaml", UriKind.Relative));
+        }
     }
 }

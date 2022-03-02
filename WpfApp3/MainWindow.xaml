@@ -19,6 +19,16 @@
                     </Hyperlink>
                 </MenuItem>
             </Menu>
+            <Menu>
+                <MenuItem Header="Broker">
+                    <Hyperlink Name="AddBroker" Click="AddBroker_Click">
+                        Ajouter un broker
+                    </Hyperlink>
+                    <Hyperlink Name="ListBroker"  Click="ListBroker_Click">
+                        Liste des broker
+                    </Hyperlink>
+                </MenuItem>
+            </Menu>
         </DockPanel>
         <StackPanel>
             <Frame Name="MainFrame" 

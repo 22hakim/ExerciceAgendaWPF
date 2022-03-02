@@ -24,7 +24,7 @@
                 <Label Foreground="Black" Target="{Binding ElementName=phonenumber}">Phone Number</Label>
                 <TextBox x:Name="phonenumber" Text="{Binding PhoneNumber, Mode=TwoWay}"></TextBox>
                 <Label Foreground="Black" Target="{Binding ElementName=budget}">Budget</Label>
-                <TextBox x:Name="budget" Text="{Binding Budget, Mode=TwoWay, ValidatesOnExceptions=True}"></TextBox>
+                <TextBox x:Name="budget" Text="{Binding Budget, Mode=TwoWay}"></TextBox>
                 <Button Click="Add_Customer" Content="Ajouter un client" Margin="0,10,0,0"></Button>
         </StackPanel>
         </Border>
